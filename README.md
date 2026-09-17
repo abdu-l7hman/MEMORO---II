@@ -19,14 +19,14 @@ Memoro II utilizes a multi-step pipeline for end-to-end conversational AI:
 
 ```mermaid
 graph TD
-    A[1. Audio Input] --> B[2. Whisper Speech-to-Text]
-    B --> C[3. Text Processing & Metadata Creation]
-    C --> D[4. OpenAI Embeddings]
-    D --> E[(5. Pinecone Vector Database)]
-    E --> F[6. Similarity Search / Context Retrieval]
-    F --> G[7. GPT-3.5-turbo Response Generation]
-    G --> H[8. Text-to-Speech]
-    H --> I[9. Audio Response]
+    A["1. Audio Input"] --> B["2. Whisper Speech-to-Text"]
+    B --> C["3. Text Processing & Metadata Creation"]
+    C --> D["4. OpenAI Embeddings"]
+    D --> E[("5. Pinecone Vector Database")]
+    E --> F["6. Similarity Search / Context Retrieval"]
+    F --> G["7. GPT-3.5-turbo Response Generation"]
+    G --> H["8. Text-to-Speech"]
+    H --> I["9. Audio Response"]
 ```
 
 By storing transcribed conversations as vectorized context in Pinecone, the system can retrieve the most relevant information when the user asks a question, enabling persistent conversational memory.
