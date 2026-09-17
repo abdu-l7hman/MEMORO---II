@@ -1,0 +1,12 @@
+openai==1.35.14
+openai-whisper
+pyaudio
+wave
+numpy
+transformers
+tiktoken
+pinecone-client
+python-dotenv
+nltk
+tqdm
+playsound
